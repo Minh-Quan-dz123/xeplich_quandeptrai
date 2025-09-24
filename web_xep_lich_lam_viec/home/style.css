@@ -1,0 +1,101 @@
+@charset "UTF-8"; /* khai báo mảng ký tự */
+
+body {
+    line-height: 1.5; /* chiều cao dòng */
+    background-color: rgb(255, 255, 255);
+}
+
+/*1 chỉnh tiêu đề*/
+#div_title_id {
+    display: flex; /* để parent ở chế độ hộp */
+    justify-content: center; /* thì mới dùng được cái này */
+}
+
+#title_id {
+    font-family: 'Times New Roman',
+}
+/*-------------------------------*/
+
+/* 2 chỉnh input lần 1 */
+#div_input_first_id input {
+    border: none;
+    background-color: rgb(236, 249, 249);
+    width:fit-content;
+    height:22px;
+    font-size:15px;
+}
+#div_input_first_id input::placeholder {
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+
+#div_input_first_id label {
+    font-size: 20px;
+}
+/*------------------------------------*/
+
+/* 3 chỉnh các button to */
+.button_confirm_class {
+    border: none;
+    font-size: 20px;
+    background-color: rgb(172, 252, 252);
+    border-radius: 44%;
+    height: 28px;
+    transition: background-color 0.2;
+}
+.button_confirm_class:hover {
+    background-color: rgb(79, 237, 237);
+}
+
+/*------------------------------------*/
+
+/* 4 chỉnh giao diện table nhập các ca làm việc */
+/* 4.1 sắp xếp giữa giao diện */
+#employee_inputs_div_id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* căn giữa theo chiều dọc */
+    align-items: center; /* căn giữa theo chiều ngang */
+}
+/*---------------------------------*/
+
+/* 4.2 sắp xếp cho input 2 ở giữa */
+.input_work_class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* căn giữa theo chiều dọc */
+    align-items: center; /* căn giữa theo chiều ngang */
+}
+/*------------------------------------*/
+
+/* 4.3 chỉnh button "+" */
+.add_button_class {
+    margin-right: 310px;
+    margin-top: 10px;
+    border: none;
+    font-size: 23px;
+    background-color: aliceblue;
+    transition: background-coler 0.2;
+    border-radius: 50%;
+}
+.add_button_class:hover {
+    background-color: rgb(240, 176, 176);
+}
+
+/* 4.4 chỉnh các checkbox 2 */
+.checkbox_class {
+    margin-right: 10px;
+}
+
+/* 4.5 chỉnh cột thứ của table cho thẳng hàng */
+.column1 {
+    text-align: center;
+    padding-right: 10px;
+}
+
+.table_class {
+    background-color: rgb(238, 255, 254);
+}
+
+
+

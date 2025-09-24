@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">  
+        <title> kết quả sắp xếp</title>
+        <!--nhúng file css-->
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <!--Nút quay về giao diện trước-->
+        <div id = "div_button1_id"> <!-- cần sửa sau này-->
+            <button id = "button1_id" onclick = "back_index()">⬅️</button>
+            <script>
+                function back_index()
+                {
+                    window.location.href = "../home/index.html"
+                }
+            </script>
+        </div>
+        
+        <!--Giao diện bảng-->
+        <h3 id = "title_id"> Kết quả sắp xếp lịch theo yêu cầu của Quân ĐZ</h1>
+            
+        <div id = "div_sapxeplich_id"> <!-- giao diện sắp xếp lịch-->
+            <div id = "div_chua_nextAndbefore">
+                <button id = "button_next_id" onclick = "nextTable()"> NEXT </button>
+                <button id = "button_before_id" onclick = "beforeTable()"> BACK</button>
+            </div>
+
+            <div id = "div_chua_index">
+                <h3 id = "h3_index_id"> Vị trí</h3>
+                <h3 id = "h3_numberOfTable_id"> Số lượng bảng</h3>
+            </div>
+
+            <h3 id = "h3_id">Lịch làm việc của tháng ... năm ...</h3>
+
+            <table id = "table_id">
+                <tr> <!-- Hàng tiêu đề bảng -->
+                    <th>Ngày</th>
+                    <th>Sáng</th>
+                    <th>Chiều</th>
+                    <th>Tối</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- giao diện thêm điều kiện-->
+        <div id = "div_condition_id">
+            <div id = "div_div_id"><h3>Thêm điều kiện sắp xếp lịch</h3></div>
+            <div id = "div_div_condition_id">
+                <input type = "radio" name = "condition">
+                <label>Mặc định: 1 nhân viên chỉ có thể tối đa làm 2 ca</label>
+                <br>
+                <input type = "radio" name = "condition"> 
+                <label>1 nhân viên có thể làm cả 3 ca</label>
+                <br>
+                <input type = "checkbox" name = "VIPcondition" onchange="addConditionForEmployees(this)"> 
+                <label>Lựa chọn cho từng nhân viên</label>
+                <br>
+            </div>
+        </div>
+        <!-- nhúng file script-->
+        <script src = "useData.js"> </script>
+    </body>
+</html>

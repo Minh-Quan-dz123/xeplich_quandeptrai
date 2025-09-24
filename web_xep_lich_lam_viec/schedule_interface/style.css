@@ -1,0 +1,87 @@
+@charset "UTF-8"; /* khai báo mảng ký tự */
+/* 1 chỉnh sắp xếp các phần tử căn giữa */
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 2 chỉnh tiêu đề trang */
+#title_id{
+    font-size: 25px;
+    color: rgb(5, 135, 164);
+}
+
+/* 3 căn giữa các phần tử trong div */
+#div_sapxeplich_id {
+    margin-right: 40%;
+    width: 40%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 4 chỉnh màu của table để nhìn */
+table th{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+table td{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#h3_id {
+    color: rgb(2, 84, 102);
+}
+
+/* 5 chỉnh nút quay lại */
+#div_button1_id {
+    width: 86%;
+}
+
+#button1_id {
+    font-size: 30px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/* 6 căn chỉnh giao diện thêm điều kiện */
+#div_condition_id {
+    position: absolute;
+    background-color: white;
+    top: 30%;
+    left:60%;
+    width: 350px;
+}
+
+/* 6.1 trong div condition ta cần sắp xếp lại */
+#div_div_id  {
+    display: flex;
+    justify-content: center;
+}
+#div_div_id h3 {
+    margin-right: 50px;
+}
+
+/* 6.2 các phần tử trong table*/
+#div_chua_nextAndbefore {
+    /* sắp xếp các phần tử theo chiều ngang*/
+    background-color: rgb(121, 91, 45);
+}
+
+#div_chua_index {
+    background-color: rgb(115, 224, 244);
+    display: flex;          /* Bật flexbox */
+    flex-direction: row;    /* Mặc định, các phần tử con sẽ nằm ngang */
+    gap: 30px;     
+}
+
+#div_chua_index h3 {
+    font-size: 14px;
+}

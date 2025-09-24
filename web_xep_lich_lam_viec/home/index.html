@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">  
+        <title>Web Sắp Xếp Lịch Làm Việc</title>  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id = "main_id">
+            <div id = "div_title_id">
+                <h1 id = "title_id"> Quân Đẹp Zai Vip Pro Max</h1>
+            </div>
+            
+            <div id = "div_input_first_id">
+                <!-- nhập tháng, năm hiện tại-->
+                <label for = "label1">  Please enter month and year for scheduling </label>
+                <input type = "number" id = "input_month_id" min = "1" max = "12"  
+                placeholder = "Month" >
+                <input type = "number" id = "input_year_id" min = "2024" max = "2030"
+                placeholder = "Year" >
+                <br>
+
+                <!--nhập số lượng nhân viên-->
+                <label for = "label2"> Please enter the number of employees</label>
+                <input type = "number" id = "input_number_employee_id" min = "1"
+                placeholder = "Enter the number of employees">
+                <br>
+            </div>
+
+            <button onclick = "addEmployeeInputs()" id = "button_addEmployees_id" 
+            class = "button_confirm_class"> Continue </button>
+
+            <!--nhúng file script lần 1 để nhập thông tin các nhân viên làm việc-->
+            <script src = "input_employee.js"></script>
+            
+        </div>
+    </body>
+
+</html>
