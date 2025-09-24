@@ -92,7 +92,7 @@ function addEmployeeInputs() // bấm continue
                     localStorage.setItem("numberOfEmployees",max_employees_old);
 
                     // chuyển sang giao diện mới
-                    window.location.href = "../schedule_interface/schedule.html";
+                    window.location.href = "schedule_interface/schedule.html";
                     //alert("oke");
                 }
                 else return;
